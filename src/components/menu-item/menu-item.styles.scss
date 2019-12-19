@@ -1,0 +1,52 @@
+.menu-item {
+  min-width: 300px;
+  height: 450px;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 0 7.5px 15px;
+  background-position: center;
+  background-size: cover;
+
+  cursor: pointer;
+
+  &.large {
+    height: 450px;
+  }
+
+  &:first-child {
+    margin-right: 7.5px;
+  }
+
+  &:last-child {
+    margin-left: 7.5px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 180px;
+    height: 90px;
+    padding: 0 55px;
+    border: 1px solid black;
+    background-color: white;
+    opacity: 0.8;
+
+    .title {
+      font-weight: bold;
+      margin-bottom: 6px;
+      font-size: 22px;
+      color: #4a4a4a;
+    }
+
+    .subtitle {
+      font-weight: lighter;
+      font-size: 16px;
+    }
+  }
+}

@@ -5,6 +5,8 @@ import { withRouter } from "react-router-dom";
 import CustomButton from "../custom-button/custom-button.component";
 import CartItem from "../cart-item/cart-item.component";
 
+import { selectCartItems } from "../../redux/cart/cart.selectors";
+
 import "./cart-modal.styles.scss";
 
 const CartModal = ({ history, cartItems }) => (
@@ -23,8 +25,8 @@ const CartModal = ({ history, cartItems }) => (
   </div>
 );
 
-const mapStateToProps = ({ cart: { cartItems } }) => ({
-  cartItems
+const mapStateToProps = state => ({
+  cartItems: selectCartItems(state)
 });
 
 export default withRouter(connect(mapStateToProps)(CartModal));

@@ -1,0 +1,21 @@
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  text-decoration: none;
+}
+
+.header-option-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
+  padding: 0 10px;
+  cursor: pointer;
+}

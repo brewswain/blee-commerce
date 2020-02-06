@@ -1,0 +1,48 @@
+.shop-item {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  align-items: center;
+  position: relative;
+  padding: 0.3rem;
+
+  &:hover {
+    .add-button {
+      opacity: 0.9;
+    }
+  }
+}
+
+.image {
+  width: 100%;
+  height: 95%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5px;
+}
+
+.container {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+
+  .name {
+    margin-bottom: 15px;
+  }
+}
+
+.add-button {
+  opacity: 0;
+  position: relative;
+  bottom: 5rem;
+
+  color: black;
+  background-color: white;
+
+  &:hover {
+    border: none;
+  }
+}

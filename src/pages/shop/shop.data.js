@@ -8,31 +8,31 @@ const SHOP_DATA = [
         id: 1,
         name: "Maroon Beanie",
         imageUrl: "https://i.ibb.co/wgQsRtb/maroon-beanie.png",
-        price: 20
+        price: "$20"
       },
       {
         id: 2,
         name: "Grey Beanie",
         imageUrl: "https://i.ibb.co/bRrwvb8/grey-beanie.png",
-        price: 22
+        price: "$22"
       },
       {
         id: 3,
         name: "Brown Brim",
         imageUrl: "https://i.ibb.co/mR4LKXZ/brown-brim.png",
-        price: 35
+        price: "$35"
       },
       {
         id: 4,
         name: "Black Brim",
         imageUrl: "https://i.ibb.co/mRrprdB/black-brim.png",
-        price: 25
+        price: "$25"
       },
       {
         id: 5,
         name: "Ice-Cream Cap",
         imageUrl: "https://i.ibb.co/r67Mf01/icecream-cap.png",
-        price: 18
+        price: "$18"
       }
     ]
   },
@@ -45,31 +45,31 @@ const SHOP_DATA = [
         id: 1,
         name: "Yeezy Boost 350",
         imageUrl: "https://i.ibb.co/m5Br24g/boost-350.png",
-        price: 350
+        price: "$350"
       },
       {
         id: 2,
         name: "Nike White & Pink Sneakers",
         imageUrl: "https://i.ibb.co/WPBgd7v/white-pink-sneakers.png",
-        price: 280
+        price: "$280"
       },
       {
         id: 3,
         name: "Nike Black",
         imageUrl: "https://i.ibb.co/HFGSf2P/black-nike.png",
-        price: 110
+        price: "$110"
       },
       {
         id: 4,
         name: "Jordans Purple",
         imageUrl: "https://i.ibb.co/51hQVBY/purple-jordans.png",
-        price: 260
+        price: "$260"
       },
       {
         id: 5,
         name: "Nike Red White Black",
         imageUrl: "https://i.ibb.co/CnzXXcm/red-white-black-nikes.png",
-        price: 160
+        price: "$160"
       }
     ]
   },
@@ -82,31 +82,31 @@ const SHOP_DATA = [
         id: 1,
         name: "Dark Grey Bomber",
         imageUrl: "https://i.ibb.co/LnwYyTS/dark-grey-bomber.png",
-        price: 80
+        price: "$80"
       },
       {
         id: 2,
         name: "Black Bomber",
         imageUrl: "https://i.ibb.co/rdzJjdw/black-bomber.png",
-        price: 75
+        price: "$75"
       },
       {
         id: 3,
         name: "Navy Parka",
         imageUrl: "https://i.ibb.co/SVtDSMY/navy-parka.png",
-        price: 110
+        price: "$110"
       },
       {
         id: 4,
         name: "OF Denim",
         imageUrl: "https://i.ibb.co/TtRM4VP/denim.png",
-        price: 135
+        price: "$135"
       },
       {
         id: 5,
         name: "Faded Pink",
         imageUrl: "https://i.ibb.co/v3Ys0VJ/faded-pink.png",
-        price: 125
+        price: "$125"
       }
     ]
   },
@@ -119,31 +119,31 @@ const SHOP_DATA = [
         id: 1,
         name: "Grey Beret",
         imageUrl: "https://i.ibb.co/HGVvPtm/grey-beret.png",
-        price: 25
+        price: "$25"
       },
       {
         id: 2,
         name: "Denim Jacket",
         imageUrl: "https://i.ibb.co/1ZFmtq1/denim-jacket.png",
-        price: 35
+        price: "$35"
       },
       {
         id: 3,
         name: "Skeleton Jersey",
         imageUrl: "https://i.ibb.co/1f41w8M/skeleton-jersey.png",
-        price: 25
+        price: "$25"
       },
       {
         id: 4,
         name: "Longsleeve shirt",
         imageUrl: "https://i.ibb.co/xS6kpsn/longsleeve.png",
-        price: 37
+        price: "$37"
       },
       {
         id: 5,
         name: "Patterned Scarf",
         imageUrl: "https://i.ibb.co/cXWqNDP/patterned-scarf.png",
-        price: 50
+        price: "$50"
       }
     ]
   },
@@ -156,31 +156,31 @@ const SHOP_DATA = [
         id: 1,
         name: "Plaid Buttonup",
         imageUrl: "https://i.ibb.co/GsNjtwC/plaid-buttonup.png",
-        price: 55
+        price: "$55"
       },
       {
         id: 2,
         name: "Palm Buttonup",
         imageUrl: "https://i.ibb.co/qsQNQ7K/palm-buttonup.png",
-        price: 20
+        price: "$20"
       },
       {
         id: 3,
         name: "Blue Crewneck",
         imageUrl: "https://i.ibb.co/LxycYww/blue-crewneck.png",
-        price: 25
+        price: "$25"
       },
       {
         id: 4,
         name: "Black Bubble Jacket",
         imageUrl: "https://i.ibb.co/55KsV1r/black-bubble-jacket.png",
-        price: 175
+        price: "$175"
       },
       {
         id: 5,
         name: "Black Longsleeve",
         imageUrl: "https://i.ibb.co/WkjY5py/black-longsleeve.png",
-        price: 50
+        price: "$50"
       }
     ]
   }

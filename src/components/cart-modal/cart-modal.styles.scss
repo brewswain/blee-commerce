@@ -1,0 +1,23 @@
+.cart-modal {
+  position: absolute;
+  top: 60px;
+  right: 15px;
+
+  background: white;
+  border: solid 1px black;
+  padding: 5px;
+
+  z-index: 5;
+
+  transition: opacity 1s, ease-in-out;
+}
+
+.cart-button {
+  min-width: 140px;
+  height: 45px;
+  margin: 10px 15px;
+}
+
+.cart-items {
+  margin: 10px 15px;
+}

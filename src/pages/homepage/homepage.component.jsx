@@ -1,6 +1,6 @@
 import React from "react";
 
-import Directory from "../../components/directory/directory.component";
+import CategoryList from "../../components/category-list/category-list.component";
 import Banner from "../../components/banner/banner.component";
 
 import "./homepage.styles.scss";
@@ -9,7 +9,7 @@ const HomePage = () => (
   <div className="homepage">
     <Banner />
 
-    <Directory />
+    <CategoryList />
   </div>
 );
 

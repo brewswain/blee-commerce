@@ -19,7 +19,7 @@ const ShopItem = ({ item, addCartItem }) => {
       />
       <div className="container">
         <span className="name">{name}</span>
-        <span className="price">{price}</span>
+        <span className="price">${price}</span>
       </div>
       <CustomButton className="add-button" onClick={() => addCartItem(item)}>
         Add to Cart

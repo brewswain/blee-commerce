@@ -1,0 +1,57 @@
+.page-container {
+  max-width: 60vw;
+  margin: 0 auto;
+}
+
+.checkout-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.option-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-right: 1rem;
+}
+
+.title {
+  padding-right: 5.2rem;
+}
+
+.subtotal-container {
+  background: rgba(199, 199, 199, 0.2);
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.subtotal-text {
+  font-size: 1.8rem;
+}
+
+.subtotal-value {
+  font-size: 1.6rem;
+  padding-left: 6rem;
+  padding-right: 5rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .page-container {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+
+  .checkout-header {
+    visibility: hidden;
+  }
+  .subtotal-container {
+    max-width: 100vw;
+  }
+
+  .subtotal-value {
+    padding-left: 6rem;
+    padding-right: 4.5rem;
+  }
+}

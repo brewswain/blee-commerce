@@ -7,8 +7,6 @@ import CategoryPage from "../category/category.component";
 import "./shop.styles.scss";
 
 const ShopPage = ({ match }) => {
-  console.log(match);
-
   return (
     <div className="shop-page">
       <Route exact path={`${match.path}`} component={CollectionsOverview} />

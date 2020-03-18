@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
 import CheckoutItem from "../../components/checkout-item/checkout-item.component";
+import StripeCheckoutButton from "../../components/stripe-checkout-button/stripe-checkout-button.component";
 
 import {
   selectCartItems,
@@ -27,6 +28,14 @@ const CheckoutPage = ({ cartItems, subtotal }) => (
     <div className="subtotal-container">
       <h3 className="subtotal-text">Subtotal:</h3>
       <h3 className="subtotal-value">${subtotal}</h3>
+    </div>
+    <div className="payment-container">
+      <div className="test-message">
+        As this is a demo, please use the following Card for payments:
+        <br />
+        4242 4242 4242 4242 - Exp: 05/21 - CVV: 123
+      </div>
+      <StripeCheckoutButton price={subtotal} />
     </div>
   </div>
 );

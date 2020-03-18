@@ -1,0 +1,36 @@
+.payment-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 3rem;
+
+  .test-message {
+    padding-right: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+.StripeCheckout {
+  background: rgb(54, 54, 54) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transition: 0.4s all ease-in-out;
+
+  span {
+    background: rgb(54, 54, 54) !important;
+    box-shadow: none !important;
+
+    transition: 0.4s all ease-in-out;
+  }
+}
+.StripeCheckout:hover {
+  color: black !important;
+  background: white !important;
+  outline: 2px solid rgb(54, 54, 54);
+
+  span {
+    color: black !important;
+    background: white !important;
+  }
+}

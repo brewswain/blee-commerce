@@ -48,4 +48,22 @@ export let createUserProfileDocument = async (userAuth, miscData) => {
   return userReference;
 };
 
+// Left in as reference for the event that we'd want to make any new documents/collections.
+
+// export const migrateCollectionsAndDocuments = async (
+//   collectionKey,
+//   objectsToAdd
+// ) => {
+//   let collectionRef = firestore.collection(collectionKey);
+
+//   let batch = firestore.batch();
+
+//   objectsToAdd.forEach(object => {
+//     let newDocumentRef = collectionRef.doc();
+//     batch.set(newDocumentRef, object);
+//   });
+
+//   return await batch.commit();
+// };
+
 export default firebase;

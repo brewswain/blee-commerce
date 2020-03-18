@@ -5,7 +5,7 @@ import "./stripe-checkout-button.styles.scss";
 
 const StripeCheckoutButton = ({ price }) => {
   const priceForStripe = price * 100;
-  const publishableKey = "TEST_KEY";
+  const publishableKey = "pk_test_QOOb8m8Z115vCOxYSNm670Pe006Wd7i59q";
 
   const onToken = token => {
     console.log(token);

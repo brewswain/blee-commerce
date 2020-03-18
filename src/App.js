@@ -38,6 +38,14 @@ class App extends React.Component {
         setCurrentUser(userAuth);
       }
     });
+
+    // Left in to demonstrate the call made to transfer our SHOP_DATA from a local file to
+    // Our Firestore database.
+
+    // migrateCollectionsAndDocuments(
+    //   "collections",
+    //   collectionsArray.map(({ title, items }) => ({ title, items }))
+    // );
   }
 
   componentWillUnmount() {

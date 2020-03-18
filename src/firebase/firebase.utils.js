@@ -48,6 +48,24 @@ export let createUserProfileDocument = async (userAuth, miscData) => {
   return userReference;
 };
 
+export const convertSnapshotToObject = collections => {
+  const convertedCollection = collections.docs.map(doc => {
+    const { title, items } = doc.data();
+
+    return {
+      routeName: encodeURI(title.toLowerCase()),
+      id: doc.id,
+      title,
+      items
+    };
+  });
+
+  return convertedCollection.reduce((accumulator, collection) => {
+    accumulator[collection.title.toLowerCase()] = collection;
+    return accumulator;
+  }, {});
+};
+
 // Left in as reference for the event that we'd want to make any new documents/collections.
 
 // export const migrateCollectionsAndDocuments = async (

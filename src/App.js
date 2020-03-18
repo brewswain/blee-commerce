@@ -10,9 +10,14 @@ import CheckoutPage from "./pages/checkout/checkout.component";
 
 import Header from "./components/header/header.component";
 
-import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
+import {
+  auth,
+  createUserProfileDocument
+  // ,migrateCollectionsAndDocuments
+} from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selectors";
+// import { selectCollectionsForShop } from "./redux/shop/shop.selectors";
 
 import "./App.css";
 
@@ -20,7 +25,10 @@ class App extends React.Component {
   unsubscribeFromAuth = null;
 
   componentDidMount() {
-    const { setCurrentUser } = this.props;
+    const {
+      setCurrentUser
+      // , collectionsArray
+    } = this.props;
 
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
@@ -37,15 +45,15 @@ class App extends React.Component {
       } else {
         setCurrentUser(userAuth);
       }
+
+      // Left in to demonstrate the call made to transfer our SHOP_DATA from a local file to
+      // Our Firestore database.
+
+      // migrateCollectionsAndDocuments(
+      //   "collections",
+      //   collectionsArray.map(({ title, items, id }) => ({ title, items, id }))
+      // );
     });
-
-    // Left in to demonstrate the call made to transfer our SHOP_DATA from a local file to
-    // Our Firestore database.
-
-    // migrateCollectionsAndDocuments(
-    //   "collections",
-    //   collectionsArray.map(({ title, items }) => ({ title, items }))
-    // );
   }
 
   componentWillUnmount() {
@@ -79,7 +87,7 @@ class App extends React.Component {
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser
-  // collectionsArray: selectCollectionsForPreview
+  // collectionsArray: selectCollectionsForShop
 });
 
 const mapDispatchToProps = dispatch => ({

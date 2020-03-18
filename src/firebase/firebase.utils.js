@@ -50,11 +50,11 @@ export let createUserProfileDocument = async (userAuth, miscData) => {
 
 export const convertSnapshotToObject = collections => {
   const convertedCollection = collections.docs.map(doc => {
-    const { title, items } = doc.data();
+    const { title, items, id } = doc.data();
 
     return {
       routeName: encodeURI(title.toLowerCase()),
-      id: doc.id,
+      id,
       title,
       items
     };

@@ -16,7 +16,7 @@ const ShopItem = ({ item, addCartItem }) => {
         style={{
           backgroundImage: `url(${imageUrl})`
         }}
-      />
+      ></div>
       <div className="container">
         <span className="name">{name}</span>
         <span className="price">${price}</span>

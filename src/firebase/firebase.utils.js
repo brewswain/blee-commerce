@@ -84,4 +84,21 @@ export const convertSnapshotToObject = collections => {
 //   return await batch.commit();
 // };
 
+// try to put stripe token data into firestore
+const stripeCollectionRef = firestore.collection("stripe/{stripeId}/purchases");
+
+export const migrateStripePayments = token => {
+  stripeCollectionRef
+    .doc()
+    .set({
+      token
+    })
+    .then(() => {
+      console.log("Stripe Purchase Saved");
+    })
+    .catch(error => {
+      console.error(error);
+    });
+};
+
 export default firebase;

@@ -1,6 +1,8 @@
 import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 
+import { migrateStripePayments } from "../../firebase/firebase.utils";
+
 import "./stripe-checkout-button.styles.scss";
 
 const StripeCheckoutButton = ({ price }) => {
@@ -10,6 +12,7 @@ const StripeCheckoutButton = ({ price }) => {
   const onToken = token => {
     console.log(token);
     alert("Payment Successful");
+    migrateStripePayments(token);
   };
 
   return (

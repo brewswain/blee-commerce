@@ -87,11 +87,12 @@ export const convertSnapshotToObject = collections => {
 // try to put stripe token data into firestore
 const stripeCollectionRef = firestore.collection("stripe/{stripeId}/purchases");
 
-export const migrateStripePayments = token => {
+export const migrateStripePayments = (token, priceForStripe) => {
   stripeCollectionRef
     .doc()
     .set({
-      token
+      token,
+      priceForStripe
     })
     .then(() => {
       console.log("Stripe Purchase Saved");

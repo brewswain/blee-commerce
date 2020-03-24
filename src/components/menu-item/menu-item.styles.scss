@@ -1,27 +1,22 @@
 .menu-item {
   min-width: 300px;
-  height: 450px;
+  height: 150px;
   flex: 1 1 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 7.5px 15px;
+  // margin: 0 7.5px 15px;
   background-position: center;
   background-size: cover;
-  border-radius: 8px;
+  // border-radius: 8px;
+  transition: 0.4s all ease-in-out;
 
   cursor: pointer;
 
-  &.large {
-    height: 450px;
-  }
-
-  &:first-child {
-    margin-right: 7.5px;
-  }
-
-  &:last-child {
-    margin-left: 7.5px;
+  .content-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .content {
@@ -29,24 +24,51 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: 180px;
-    height: 90px;
-    padding: 0 55px;
-    border: 1px solid black;
-    background-color: white;
+    width: 30%;
+    height: 150px;
+    background-color: black;
     opacity: 0.8;
+    transition: 0.4s all ease-in-out;
 
-    .title {
+    .content-title {
       font-weight: bold;
       margin-bottom: 6px;
-      font-size: 22px;
-      color: #4a4a4a;
+      font-size: 1.6rem;
+      color: white;
     }
 
-    .subtitle {
+    .content-subtitle {
       font-weight: lighter;
       font-size: 16px;
+      color: white;
+    }
+  }
+}
+
+.hats {
+  border-radius: 8px 8px 0 0;
+  .content {
+    border-radius: 0 8px 0 0;
+  }
+}
+
+.masc {
+  border-radius: 0 0 8px 8px;
+  .content {
+    border-radius: 0 0 8px 0;
+  }
+}
+
+.menu-item-container {
+  &:hover {
+    .menu-item {
+      height: 250px;
+      min-width: 130%;
+    }
+    .content {
+      opacity: 1;
+
+      height: 250px;
     }
   }
 }

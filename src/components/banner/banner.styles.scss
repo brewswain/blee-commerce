@@ -2,18 +2,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px 0;
+  padding: 2rem 0;
+  a {
+    width: 90vw;
+    height: 65vh;
+  }
 }
 
-.banner {
-  height: 33vh;
-  width: 70vw;
-  background: #ffd6e9;
-  color: #ff2b8e;
-  border-radius: 8px;
-  font-size: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
+// .banner {
+//   height: 33vh;
+//   width: 70vw;
+//   background: #ffd6e9;
+//   color: #ff2b8e;
+//   border-radius: 8px;
+//   font-size: 2.5rem;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 15px;
+// }
+
+.banner-svg {
+  width: 100%;
+  height: 100%;
 }

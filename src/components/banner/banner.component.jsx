@@ -1,14 +1,18 @@
 import React from "react";
 
+import { ReactComponent as BannerSVG } from "../../assets/blee_commerce.svg";
+
 import "./banner.styles.scss";
 
 const Banner = () => (
   <div className="banner-container">
-    <div className="banner">
-      Hello! This is an overly friendly message to distract you from the fact
-      that capitalism has successfully shaped our perspective on needs and
-      wants! (It's kinda cool in a fucked up way)
-    </div>
+    <a
+      href="https://github.com/brewswain"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <BannerSVG className="banner-svg" />
+    </a>
   </div>
 );
 

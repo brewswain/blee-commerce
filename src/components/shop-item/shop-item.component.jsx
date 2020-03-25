@@ -16,6 +16,9 @@ const ShopItem = ({ item, addCartItem }) => {
         style={{
           backgroundImage: `url(${imageUrl})`
         }}
+        onClick={() => {
+          console.log("hello");
+        }}
       ></div>
       <div className="container">
         <span className="name">{name}</span>

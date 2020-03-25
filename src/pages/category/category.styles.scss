@@ -1,3 +1,21 @@
-.items {
+.category-page-title {
+  font-size: 3.5rem;
+  padding-left: 1rem;
+}
+
+.category-page-subtitle {
+  font-size: 1.3rem;
+  color: rgb(66, 66, 66);
+
+  .subtitle-link {
+    color: rgb(66, 66, 66);
+    text-decoration: none;
+  }
+}
+
+.category-page-items {
   display: flex;
+  // .shop-item {
+  //   height: 70vh;
+  // }
 }

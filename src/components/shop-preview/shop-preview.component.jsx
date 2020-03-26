@@ -11,7 +11,7 @@ const ShopPreview = ({ title, items, history, match, routeName }) => (
       className="title"
       onClick={() => history.push(`${match.path}/${routeName}`)}
     >
-      {title.toUpperCase()}
+      {title.toUpperCase()} <span className="subtitle">Details</span>
     </h1>
     <div className="preview-content">
       {items.map(item => (

@@ -6,11 +6,19 @@
   .title {
     max-width: 50px;
     font-family: "Playfair Display", serif;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 0;
-    padding-left: 2rem;
+    margin-left: 2rem;
     cursor: pointer;
     z-index: 10;
+    display: flex;
+    align-items: center;
+
+    .subtitle {
+      padding-left: 2rem;
+      font-size: 1.2rem;
+      color: rgb(121, 121, 121);
+    }
   }
 
   .preview-content {
@@ -27,4 +35,8 @@
       padding-bottom: 0;
     }
   }
+}
+
+.category-link {
+  cursor: pointer;
 }

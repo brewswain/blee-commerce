@@ -13,7 +13,7 @@ const CategoryPage = ({ collection }) => {
   const { items } = collection;
   return (
     <ReactFullpage
-      // FUllscreen Options
+      // Fullscreen Options
       scrollingSpeed={1000} /* Options here */
       licenseKey={null}
       scrollOverflow={true}
@@ -21,14 +21,6 @@ const CategoryPage = ({ collection }) => {
         return (
           <div className="header-container">
             <div className="category">
-              {/* <h2 className="category-page-title">
-              {title}
-              <span className="category-page-subtitle">
-                <Link to="/shop" className="subtitle-link">
-                   - Return to Shop here!
-                </Link>
-              </span>
-            </h2> */}
               <div className="category-page-items">
                 {items.map(item => (
                   <div className="section" key={item.id}>

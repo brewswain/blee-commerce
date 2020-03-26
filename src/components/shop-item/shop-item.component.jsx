@@ -7,7 +7,7 @@ import { addCartItem } from "../../redux/cart/cart.actions";
 import "./shop-item.styles.scss";
 
 const ShopItem = ({ item, isCategory, addCartItem }) => {
-  const { name, price, imageUrl } = item;
+  const { name, price, imageUrl, largeImageUrl } = item;
 
   return (
     <div className={`${isCategory ? "large-shop-item" : "shop-item"} `}>
@@ -15,6 +15,13 @@ const ShopItem = ({ item, isCategory, addCartItem }) => {
         className="image"
         style={{
           backgroundImage: `url(${imageUrl})`
+        }}
+      ></div>
+
+      <div
+        className="large-image"
+        style={{
+          backgroundImage: `url(${largeImageUrl})`
         }}
       ></div>
       <div className={`${isCategory ? "large-container" : "container"}`}>

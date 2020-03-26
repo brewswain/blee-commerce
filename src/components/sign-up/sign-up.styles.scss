@@ -1,11 +1,18 @@
 .sign-up {
   display: flex;
+  background: white;
   flex-direction: column;
-  width: 450px;
-  margin: 20px 45px;
-}
+  padding: 0 15px;
+  border: 1px solid rgba(85, 85, 85, 0.2);
+  border-radius: 8px;
 
-.button-container {
-  display: flex;
-  align-items: space-between;
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .custom-button {
+      margin: 0.5rem 5rem 1.8rem;
+    }
+  }
 }

@@ -1,10 +1,11 @@
 .shop-preview-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
   .title {
     max-width: 50px;
+    font-family: "Playfair Display", serif;
     font-size: 2.5rem;
     margin-bottom: 0;
     padding-left: 2rem;
@@ -13,7 +14,17 @@
   }
 
   .preview-content {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    width: 90vw;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+    align-self: center;
+    padding-top: 25px;
+    border-bottom: solid 3px #555;
+
+    .shop-item {
+      width: 100%;
+      padding-bottom: 0;
+    }
   }
 }

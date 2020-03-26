@@ -10,8 +10,8 @@ const AuthenticationPage = () => (
   <div className="authentication-page">
     <Header />
     <div className="authentication">
-      <SignIn />
-      <SignUp />
+      <SignIn className="authentication-form" />
+      <SignUp className="authentication-form" />
     </div>
   </div>
 );

@@ -1,4 +1,17 @@
+.authentication-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
 .authentication {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 10rem;
+
+  .sign-in {
+    margin: 0 5rem;
+    padding-bottom: 1.5rem;
+  }
 }

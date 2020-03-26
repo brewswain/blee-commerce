@@ -1,0 +1,26 @@
+.cart-item {
+  padding-top: 2rem;
+  text-align: center;
+  border-bottom: solid 1px rgba($color: #999999, $alpha: 0.5);
+
+  img {
+    width: 70%;
+  }
+}
+
+.cart-container {
+  padding: 15px;
+  background: whitesmoke;
+}
+
+.cart-name {
+  padding-right: 15px;
+}
+
+.item-quantity {
+  font-weight: bold;
+}
+
+.item-multiplier {
+  font-size: 1.3rem;
+}

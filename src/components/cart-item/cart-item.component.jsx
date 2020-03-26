@@ -8,10 +8,12 @@ const CartItem = ({ item }) => {
   return (
     <div className="cart-item">
       <img src={imageUrl} alt="cart-item" className="item-image" />
-      <div className="container">
-        <span className="name">{name}</span>
-        <span className="price">
-          {quantity} x {price}
+      <div className="cart-container">
+        <span className="cart-name">{name}</span>
+        <span className="cart-price">
+          <span className="item-quantity">{quantity}</span>{" "}
+          <span className="item-multiplier">x </span>
+          <span className="item-price">${price}</span>
         </span>
       </div>
     </div>

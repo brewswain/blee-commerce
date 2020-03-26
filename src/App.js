@@ -17,6 +17,7 @@ import {
 } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selectors";
+import { selectCartTotal } from "./redux/cart/cart.selectors";
 // import { selectCollectionsForShop } from "./redux/shop/shop.selectors";
 
 import "./App.css";
@@ -67,7 +68,14 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
-          <Route exact path="/checkout" component={CheckoutPage} />
+          <Route
+            exact
+            path="/checkout"
+            render={() =>
+              this.props.cartTotal > 0 ? <CheckoutPage /> : <Redirect to="/" />
+            }
+          />
+
           <Route
             exact
             path="/signup"
@@ -86,8 +94,8 @@ class App extends React.Component {
 }
 
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser
-  // collectionsArray: selectCollectionsForShop
+  currentUser: selectCurrentUser,
+  cartTotal: selectCartTotal
 });
 
 const mapDispatchToProps = dispatch => ({

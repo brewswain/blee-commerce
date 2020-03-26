@@ -2,10 +2,9 @@
   height: 70px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 0 15px;
   text-decoration: none;
-  background: white;
 }
 
 .header-option-container {
@@ -17,6 +16,24 @@
   text-decoration: none;
   color: black;
   font-size: 1.8rem;
-  padding: 0 10px;
+  padding: 0 20px;
   cursor: pointer;
+}
+
+// Styling for when i'm on category page
+.category-header {
+  height: 70px;
+  width: 97.55vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 15px;
+  text-decoration: none;
+  position: absolute;
+  z-index: 9;
+
+  .header-option-container {
+    display: flex;
+    justify-content: flex-end;
+  }
 }

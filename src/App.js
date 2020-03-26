@@ -8,7 +8,7 @@ import ShopPage from "./pages/shop/shop.component";
 import AuthenticationPage from "./pages/authentication/authentication.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
 
-import Header from "./components/header/header.component";
+// import Header from "./components/header/header.component";
 
 import {
   auth,
@@ -63,7 +63,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        {/* <Header /> */}
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />

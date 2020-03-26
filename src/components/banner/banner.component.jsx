@@ -7,7 +7,7 @@ import "./banner.styles.scss";
 const Banner = () => (
   <div className="banner-container">
     <a
-      href="https://github.com/brewswain"
+      href="https://github.com/brewswain/blee-commerce"
       target="_blank"
       rel="noopener noreferrer"
     >

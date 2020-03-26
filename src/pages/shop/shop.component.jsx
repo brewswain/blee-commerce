@@ -9,6 +9,8 @@ import {
   convertSnapshotToObject
 } from "../../firebase/firebase.utils";
 
+import Header from "../../components/header/header.component";
+
 import { updateCollections } from "../../redux/shop/shop.actions";
 
 import LoadingSkeleton from "../../components/loading-skeleton/loading-skeleton.component";
@@ -42,20 +44,23 @@ class ShopPage extends React.Component {
     const { loading } = this.state;
 
     return (
-      <div className="shop-page">
-        <Route
-          exact
-          path={`${match.path}`}
-          render={props => (
-            <CollectionsOverviewWithSkeleton isLoading={loading} {...props} />
-          )}
-        />
-        <Route
-          path={`${match.path}/:categoryId`}
-          render={props => (
-            <CategoryPageWithSkeleton isLoading={loading} {...props} />
-          )}
-        />
+      <div className="header-container">
+        <Header isCategory />
+        <div className="shop-page">
+          <Route
+            exact
+            path={`${match.path}`}
+            render={props => (
+              <CollectionsOverviewWithSkeleton isLoading={loading} {...props} />
+            )}
+          />
+          <Route
+            path={`${match.path}/:categoryId`}
+            render={props => (
+              <CategoryPageWithSkeleton isLoading={loading} {...props} />
+            )}
+          />
+        </div>
       </div>
     );
   }

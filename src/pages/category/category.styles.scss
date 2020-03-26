@@ -1,3 +1,7 @@
+body {
+  background: white;
+}
+
 .category-page-title {
   font-size: 3.5rem;
   padding-left: 1rem;
@@ -15,7 +19,17 @@
 
 .category-page-items {
   display: flex;
+  flex-direction: column;
+
   // .shop-item {
   //   height: 70vh;
   // }
+}
+
+.section {
+  height: 100vh;
+}
+
+header {
+  display: none;
 }

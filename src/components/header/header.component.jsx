@@ -13,10 +13,10 @@ import { auth } from "../../firebase/firebase.utils";
 
 import "./header.styles.scss";
 
-const Header = ({ currentUser, isVisible }) => (
-  <div className="header">
+const Header = ({ currentUser, isVisible, isCategory }) => (
+  <div className={isCategory ? "category-header" : "header"}>
     <Link to="/" className="icon header-link">
-      Placeholder Icon
+      Home
     </Link>
     <div className="header-option-container">
       {currentUser ? (

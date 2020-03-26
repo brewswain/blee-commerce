@@ -3,14 +3,7 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const config = {
-  apiKey: "AIzaSyDjEZMX3DK6Hwrj3rap0xT5harhVLbGYpo",
-  authDomain: "blee-commerce.firebaseapp.com",
-  databaseURL: "https://blee-commerce.firebaseio.com",
-  projectId: "blee-commerce",
-  storageBucket: "blee-commerce.appspot.com",
-  messagingSenderId: "691637080555",
-  appId: "1:691637080555:web:4c6faa2658a532aa2849ae",
-  measurementId: "G-7M7K3WLNRM"
+  // Insert your firebase config Object here
 };
 
 firebase.initializeApp(config);

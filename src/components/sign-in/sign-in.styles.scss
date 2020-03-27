@@ -16,3 +16,12 @@
     }
   }
 }
+
+@media screen and (max-width: 320px) {
+  .sign-in,
+  .sign-up {
+    .button-container {
+      align-items: center;
+    }
+  }
+}

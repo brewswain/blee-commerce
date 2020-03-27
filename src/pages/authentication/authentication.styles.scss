@@ -9,9 +9,44 @@
   justify-content: center;
   align-items: center;
   padding: 5rem 10rem;
+  background-color: whitesmoke;
 
   .sign-in {
     margin: 0 5rem;
     padding-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .authentication {
+    flex-direction: column;
+    padding: 2rem 10rem;
+
+    .sign-in {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .authentication {
+    flex-direction: column;
+    padding: 2rem 10rem;
+
+    .sign-in,
+    .sign-up {
+      width: 90vw;
+    }
+
+    .sign-in {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .sign-in,
+  .sign-up {
+    width: 100vw;
   }
 }

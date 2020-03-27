@@ -58,11 +58,16 @@
   bottom: 50px;
   right: 15px;
 
-  // background: rgb(106, 157, 250);
   background: rgb(201, 201, 201);
-  min-width: 30px;
-  height: 30px;
+  min-width: 33px;
+  height: 33px;
   border-radius: 50%;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #555;
+    color: white;
+  }
 }
 
 .remove-button {

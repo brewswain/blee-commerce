@@ -6,3 +6,23 @@
   padding-bottom: 50px;
   padding-left: 310px;
 }
+
+@media screen and (max-width: 1200px) {
+  .category-menu {
+    width: 80%;
+    align-self: flex-start;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .category-menu {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .category-menu {
+    width: 50%;
+  }
+}

@@ -34,6 +34,12 @@
 
     .name {
       margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .price {
+      font-size: 1.3rem;
+      font-weight: bold;
     }
   }
 
@@ -92,6 +98,10 @@
     .large-container-add-button {
       width: 30%;
     }
+
+    .large-container-price {
+      font: 1.5rem;
+    }
   }
 
   .add-button {
@@ -107,5 +117,17 @@
   .large-container-price {
     font-size: 1.6rem;
     padding-right: 5rem;
+  }
+}
+
+@-moz-document url-prefix() {
+  .shop-item {
+    .add-button {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

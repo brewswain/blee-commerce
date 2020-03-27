@@ -1,13 +1,27 @@
 body {
-  background: whitesmoke; 
+  background: whitesmoke;
   background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .homepage {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 80px;
+  padding: 0;
   height: 90vh;
+  width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+  }
+
+  .homepage {
+    padding: 0;
+  }
 }

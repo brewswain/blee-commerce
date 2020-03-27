@@ -40,3 +40,39 @@
 .category-link {
   cursor: pointer;
 }
+
+@media screen and (max-width: 767px) {
+  .shop-preview-container {
+    .title {
+      margin-top: 3rem;
+      .subtitle {
+        font-size: 1rem;
+      }
+    }
+
+    .preview-content {
+      width: 100vw;
+
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 0;
+
+      .shop-item {
+        width: 49.9vw;
+        padding: 0;
+      }
+    }
+
+    .add-button {
+      opacity: 1;
+      min-width: 130px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .shop-preview-container {
+    .preview-content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

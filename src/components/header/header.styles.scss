@@ -5,6 +5,7 @@
   justify-content: flex-end;
   padding: 0 15px;
   text-decoration: none;
+  width: 97.55vw;
 }
 
 .header-option-container {
@@ -64,6 +65,12 @@
     .header-link {
       font-size: 1.4rem;
       padding: 0 10px;
+    }
+
+    .cart-modal {
+      width: 100vw;
+      left: 0;
+      top: 70px;
     }
   }
 }

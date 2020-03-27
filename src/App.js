@@ -17,6 +17,7 @@ import {
 } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selectors";
+import { hideCart } from "./redux/cart/cart.actions";
 import { selectCartTotal } from "./redux/cart/cart.selectors";
 // import { selectCollectionsForShop } from "./redux/shop/shop.selectors";
 
@@ -27,9 +28,12 @@ class App extends React.Component {
 
   componentDidMount() {
     const {
-      setCurrentUser
+      setCurrentUser,
+      hideCart
       // , collectionsArray
     } = this.props;
+
+    hideCart();
 
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
@@ -99,7 +103,8 @@ const mapStateToProps = createStructuredSelector({
 });
 
 const mapDispatchToProps = dispatch => ({
-  setCurrentUser: user => dispatch(setCurrentUser(user))
+  setCurrentUser: user => dispatch(setCurrentUser(user)),
+  hideCart: () => dispatch(hideCart())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

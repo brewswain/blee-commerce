@@ -1,7 +1,5 @@
 body {
   background: whitesmoke;
-  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .homepage {
@@ -14,14 +12,11 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  html {
-    overflow-x: hidden;
-  }
-  body {
-    overflow-x: hidden;
-  }
-
   .homepage {
     padding: 0;
+
+    .header {
+      width: 97vw;
+    }
   }
 }

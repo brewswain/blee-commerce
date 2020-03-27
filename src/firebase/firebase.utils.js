@@ -3,7 +3,7 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const config = {
-  // If you're reading this then I need to reconfigure my .gitignore  yet again
+  // gitignore didn't work
 };
 
 firebase.initializeApp(config);

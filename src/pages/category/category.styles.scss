@@ -103,6 +103,10 @@ body {
         font-size: 6.5rem;
       }
     }
+
+    .category-header {
+      width: 80vw;
+    }
   }
 }
 @media screen and (max-width: 768px) {
@@ -138,9 +142,50 @@ body {
   }
 
   .category-header {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.8);
 
-    width: 93vw;
+    width: 95vw;
+    position: fixed;
+  }
+
+  .price-box {
+    padding-top: 2rem;
+    width: 100vw;
+    justify-content: center;
+  }
+}
+
+// Oneplus Specific styling
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2.625),
+  only screen and (min--moz-device-pixel-ratio: 2.625),
+  only screen and (-o-min-device-pixel-ratio: 2.625/1),
+  only screen and (min-device-pixel-ratio: 2.625),
+  only screen and (min-resolution: 402dpi),
+  only screen and (min-resolution: 2.625dppx) {
+  .large-shop-item {
+    flex-direction: column;
+
+    .large-image {
+      width: 100vw;
+      height: 100%;
+      margin-top: 70px;
+    }
+
+    .large-container {
+      width: 100vw;
+      .name {
+        font-size: 3rem;
+        text-align: center;
+        line-height: 2ch;
+      }
+    }
+  }
+
+  .category-header {
+    background: rgba(255, 255, 255, 0.8);
+
+    width: 95vw;
     position: fixed;
   }
 

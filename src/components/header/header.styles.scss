@@ -27,12 +27,12 @@
 
 // Styling for when I'm on category page
 .category-header {
-  height: 70px;
-  width: 97.55vw;
+  height: 60px;
+  width: 90.55vw;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 15px;
+  padding-right: 15px;
   text-decoration: none;
   position: absolute;
   top: 0;
@@ -85,7 +85,7 @@
     }
   }
   .category-header {
-    width: 90vw;
+    width: 80vw;
     .header-link {
       font-size: 1.4rem;
       padding: 0 10px;

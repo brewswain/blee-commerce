@@ -1,5 +1,5 @@
 .shop-item {
-  width: 22%;
+  width: 20vh;
   display: flex;
   flex-direction: column;
   height: 350px;
@@ -65,6 +65,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .shop-item {
+    width: 20%;
+    .image {
+      width: 100%;
     }
   }
 }

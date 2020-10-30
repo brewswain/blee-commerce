@@ -8,11 +8,9 @@ import ShopPage from "./pages/shop/shop.component";
 import AuthenticationPage from "./pages/authentication/authentication.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
 
-// import Header from "./components/header/header.component";
-
 import {
   auth,
-  createUserProfileDocument
+  createUserProfileDocument,
   // ,migrateCollectionsAndDocuments
 } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.actions";
@@ -29,22 +27,22 @@ class App extends React.Component {
   componentDidMount() {
     const {
       setCurrentUser,
-      hideCart
+      hideCart,
       // , collectionsArray
     } = this.props;
 
     hideCart();
 
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
       if (userAuth) {
         let userReference = await createUserProfileDocument(userAuth);
 
-        userReference.onSnapshot(snapShot => {
+        userReference.onSnapshot((snapShot) => {
           setCurrentUser({
             currentUser: {
               id: snapShot.id,
-              ...snapShot.data()
-            }
+              ...snapShot.data(),
+            },
           });
         });
       } else {
@@ -99,12 +97,12 @@ class App extends React.Component {
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
-  cartTotal: selectCartTotal
+  cartTotal: selectCartTotal,
 });
 
-const mapDispatchToProps = dispatch => ({
-  setCurrentUser: user => dispatch(setCurrentUser(user)),
-  hideCart: () => dispatch(hideCart())
+const mapDispatchToProps = (dispatch) => ({
+  setCurrentUser: (user) => dispatch(setCurrentUser(user)),
+  hideCart: () => dispatch(hideCart()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

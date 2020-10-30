@@ -1,10 +1,9 @@
 .category-menu {
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
   padding-bottom: 50px;
-  padding-left: 310px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1200px) {

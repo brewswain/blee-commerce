@@ -22,7 +22,7 @@ const CategoryPage = ({ collection }) => {
           <div className="header-container">
             <div className="category">
               <div className="category-page-items">
-                {items.map(item => (
+                {items.map((item) => (
                   <div className="section" key={item.id}>
                     <ShopItem key={item.id} item={item} isCategory={true} />
                   </div>
@@ -37,7 +37,7 @@ const CategoryPage = ({ collection }) => {
 };
 
 const mapStateToProps = (state, ownProps) => ({
-  collection: selectCollection(ownProps.match.params.categoryId)(state)
+  collection: selectCollection(ownProps.match.params.categoryId)(state),
 });
 
 export default connect(mapStateToProps)(CategoryPage);

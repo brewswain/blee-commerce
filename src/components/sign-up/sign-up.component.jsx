@@ -15,11 +15,11 @@ class SignUp extends React.Component {
       displayName: "",
       email: "",
       password: "",
-      confirmPassword: ""
+      confirmPassword: "",
     };
   }
 
-  handleSubmit = async event => {
+  handleSubmit = async (event) => {
     event.preventDefault();
 
     const { displayName, email, password, confirmPassword } = this.state;
@@ -41,14 +41,14 @@ class SignUp extends React.Component {
         displayName: "",
         email: "",
         password: "",
-        confirmPassword: ""
+        confirmPassword: "",
       });
     } catch (error) {
       console.error(error);
     }
   };
 
-  handleChange = event => {
+  handleChange = (event) => {
     const { name, value } = event.target;
 
     this.setState({ [name]: value });
@@ -64,7 +64,7 @@ class SignUp extends React.Component {
 
         <form onSubmit={this.handleSubmit}>
           <FormInput
-            type="displayName"
+            type="text"
             name="displayName"
             label="display name"
             handleChange={this.handleChange}

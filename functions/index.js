@@ -6,9 +6,8 @@ const stripe = require("stripe")(functions.config().stripe.secret_key);
 
 exports.makeStripeCharge = functions.firestore
   .document("stripe/{stripeId}/purchases/{purchaseId}")
-  .onCreate(event => {
+  .onCreate((event) => {
     const payment = event.data();
-    console.log(payment);
 
     return admin
       .firestore()
@@ -22,14 +21,14 @@ exports.makeStripeCharge = functions.firestore
 
         return stripe.charges.create(charge);
       })
-      .then(charge => {
+      .then((charge) => {
         admin
           .firestore()
           .doc("stripe/{stripeId}/purchases/{purchaseId}/charge/{chargeId}")
           .set(charge);
         return console.log("I worked!!!");
       })
-      .catch(error => {
+      .catch((error) => {
         throw new Error(error);
       });
   });

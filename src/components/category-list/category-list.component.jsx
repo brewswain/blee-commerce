@@ -17,7 +17,7 @@ const CategoryList = ({ sections }) => (
 );
 
 const mapStateToProps = createStructuredSelector({
-  sections: selectCategorySections
+  sections: selectCategorySections,
 });
 
 export default connect(mapStateToProps)(CategoryList);

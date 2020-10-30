@@ -7,6 +7,7 @@
   justify-content: center;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
   transition: 0.4s all ease-in-out;
 
   cursor: pointer;
@@ -59,14 +60,15 @@
 
 .menu-item-container {
   &:hover {
-    .menu-item {
-      height: 250px;
-      width: 130%;
-    }
     .content {
+      background: rgb(189, 189, 189);
       opacity: 1;
 
-      height: 250px;
+      .content-title {
+        transition: 0.4s all;
+        color: black;
+        font-size: 2rem;
+      }
     }
   }
 }

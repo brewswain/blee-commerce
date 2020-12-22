@@ -7,15 +7,22 @@ import { ReactComponent as ShoppingCartIcon } from "../../assets/Orion_shopping-
 
 import "./cart-icon.styles.scss";
 
-const CartIcon = ({ toggleVisibility }) => (
-  <div className="cart-icon" onClick={toggleVisibility}>
-    <ShoppingCartIcon className="shopping-cart-icon" />
-    {/* <span className="count">0</span> */}
-  </div>
-);
+const CartIcon = ({ toggleVisibility }) => {
+  return (
+    <div
+      className="cart-icon"
+      onClick={async () => {
+        await toggleVisibility();
+      }}
+    >
+      <ShoppingCartIcon className="shopping-cart-icon" />
+      {/* <span className="count">0</span> */}
+    </div>
+  );
+};
 
-const mapDispatchToProps = dispatch => ({
-  toggleVisibility: () => dispatch(toggleVisibility())
+const mapDispatchToProps = (dispatch) => ({
+  toggleVisibility: () => dispatch(toggleVisibility()),
 });
 
 export default connect(null, mapDispatchToProps)(CartIcon);

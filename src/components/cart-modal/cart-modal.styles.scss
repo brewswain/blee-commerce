@@ -14,6 +14,10 @@
   overflow-x: hidden;
 
   z-index: 5;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .cart-button {

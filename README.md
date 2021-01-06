@@ -11,7 +11,7 @@ This project is made with React and simulates an eCommerce platform. My goal is 
 - React
 - Redux
 - Firebase
-- Auth0
+- OAuth
 - Cloud FUnctions
 
 # Site Overview
